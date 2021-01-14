@@ -1,0 +1,92 @@
+@import url('../css/fonts.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Lexend',sans-serif ;
+}
+
+:root{
+
+    /*      warna tema       */
+    --text-gray: #3f4954;
+    --text-light : #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+
+    /* gradient color   */
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+    /*      font-family   */
+    --Abel: 'Abel', cursive;
+    --Anton: 'Anton', cursive;
+    --Josefin : 'Josefin', cursive;
+    --Lexend: 'Lexend', cursive;
+    --Livvic : 'Livvic', cursive;
+}
+
+body{
+    background-image: url(../assets/Abract01.png) ;
+    background-size: 100%;
+
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width:350px ;
+    width: 100%;
+    background: rgba(255, 255, 255, .5);
+    padding: 25px;
+    border-radius: 5px;
+    
+}
+.container h2{
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: black;
+}
+.container .input_field{
+    margin-bottom: 10px;
+}
+.container .input_field input[type="text"], .container textarea{
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+}
+.container .input_field input[type="email"]{
+    width: 100%;
+}
+.container textarea{
+    height: 80px;
+    resize: none;
+}
+.container .btn input[type="submit"]{
+    border: 0;
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 25px;
+    background: var(--sky);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    border: 25px;
+    cursor: pointer;
+}
+
+.container #error_message{
+    margin-bottom: 20px;
+    padding: 0px;
+    background: #fe8b8e;
+    text-align: center ;
+    font-size: 14px;
+    transition: all 0.5s ease;
+}

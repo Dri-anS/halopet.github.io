@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Ask.css">
+    
+    <title>Tanya Pet</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Tanya Pet</h1>
+        <h5>tanya tentang hewan kesayangan kamu</h5>
+        <div id="error_message"></div>
+
+            <form action="" id="myform" onsubmit="return validation()">
+                <div class="ktg">
+                    <label>Kategori Hewan:</label>
+                        <select name="Hewan">
+                            <option value="kucing">Kucing</option>
+                            <option value="Anjing">Anjing</option>
+                            <option value="Hamster">Hamster</option>
+                            <option value="lainnya">lainnya</option>
+                        </select>
+                </div>
+                <div class="input_field">
+                    <input type="text" placeholder="Nama Kamu" id="name">
+                </div>
+                <div class="input_field">
+                    <input type="text" placeholder="Email" id="Email">
+                </div>
+                <div class="input_field">
+                    <textarea name="Pesan" id="message" cols="30" rows="10" placeholder="Pertanyaan anda..."></textarea>
+                </div>
+                <div class="btn">
+                    <button type="input">Tanya</button>
+                </div>
+            </form>
+        </div>
+        <script>
+            alert("Selamat Datang di TanyaPet")
+        </script>
+</body>
+</html>
